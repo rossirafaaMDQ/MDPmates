@@ -1,1 +1,189 @@
-/*# sourceMappingURL=estilo.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Open+Sans&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Open Sans", sans-serif;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.Menu_Item a {
+  align-items: center;
+  color: black;
+  text-decoration: underline;
+  list-style-type: none;
+}
+.Menu_Item a .ClassLogo {
+  width: 100%;
+}
+.Menu_Item a .Logo {
+  margin: 0 auto;
+  background-position: center;
+  display: block;
+}
+.Menu_Item a .Menu {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  height: 100%;
+  justify-content: center;
+  list-style-type: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Open Sans", sans-serif;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.navbar .Logo {
+  margin: 0 auto;
+  background-position: center;
+  display: block;
+}
+.navbar .Logo .Menu {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  height: 100%;
+  justify-content: center;
+  list-style-type: none;
+}
+.navbar .Logo .Menu .Menu_Item a {
+  align-items: center;
+  color: black;
+  text-decoration: underline;
+  list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+p {
+  text-align: center;
+}
+
+.Main {
+  background-color: white;
+}
+.Main .Titulo-Index {
+  margin-bottom: 50px;
+}
+.Main .Titulo-Index .FotoPrincipal {
+  background-image: url("../images/imperial foto aestetic.jpg");
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding-inline: 200px;
+  display: flex;
+  flex-direction: column;
+}
+.Main .Titulo-Index .FotoPrincipal h2,
+.Main .Titulo-Index .FotoPrincipal p {
+  padding-inline: 100px;
+  background-color: rgba(255, 255, 255, 0.356);
+  margin-top: 30px;
+}
+.Main .Titulo-Index .FotoPrincipal h2 h1,
+.Main .Titulo-Index .FotoPrincipal h2 h2,
+.Main .Titulo-Index .FotoPrincipal h2 h3,
+.Main .Titulo-Index .FotoPrincipal h2 p,
+.Main .Titulo-Index .FotoPrincipal p h1,
+.Main .Titulo-Index .FotoPrincipal p h2,
+.Main .Titulo-Index .FotoPrincipal p h3,
+.Main .Titulo-Index .FotoPrincipal p p {
+  text-align: center;
+}
+
+footer {
+  background-color: rgb(0, 0, 0);
+}
+footer .Redes {
+  text-align: right;
+  color: white;
+}
+footer .Redes .Info {
+  color: white;
+}
+
+/* Pagina Tienda */
+.ProductosTienda {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+.ProductosTienda .Tarjetas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 3rem;
+}
+.ProductosTienda .Tarjetas .TarjetaImagen {
+  width: 400px;
+  padding: 1rem;
+  display: flex;
+  border-radius: 30px;
+  flex-direction: column;
+}
+.ProductosTienda .Tarjetas .TarjetaImagen .TarjetaTitulo {
+  padding-inline: 60px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 1rem;
+}
+
+/*** Blog ***/
+.Grilla {
+  display: grid;
+  margin: 3rem;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "Beneficios Beneficios" "Curar-Mate Preparacion";
+}
+
+/*** Footer ***/
+.Pie-de-pagina,
+h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/** Media queries*/
+@media screen and (max-width: 800px) {
+  .FotoPrincipal {
+    height: 390px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  /*** Texto Blog ***/
+  .Grilla {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "Curar-Mate" "Preparacion" "Beneficios";
+  }
+}/*# sourceMappingURL=estilo.css.map */

@@ -8,18 +8,18 @@
   font-family: "Open Sans", sans-serif;
 }
 
-h1,
-h2,
-h3,
-p {
-  text-align: center;
-}
-
 .navbar {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+
+h1,
+h2,
+h3,
+p {
+  text-align: center;
 }
 
 .Menu {
@@ -38,10 +38,6 @@ p {
   color: black;
   text-decoration: underline;
   list-style-type: none;
-}
-
-.ClassLogo {
-  width: 100%;
 }
 
 .Logo {
