@@ -13,22 +13,22 @@
 
   .ClassLogo {
     width: 100%;
-  }
 
-  .Logo {
-    margin: 0 auto;
-    background-position: center;
-    display: block;
-  }
+    .Logo {
+      margin: 0 auto;
+      background-position: center;
+      display: block;
 
-  .Menu {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-top: 20px;
-    margin-bottom: 30px;
-    height: 100%;
-    justify-content: center;
-    list-style-type: none;
+      .Menu {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        height: 100%;
+        justify-content: center;
+        list-style-type: none;
+      }
+    }
   }
 }

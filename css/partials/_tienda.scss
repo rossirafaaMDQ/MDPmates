@@ -1,0 +1,30 @@
+.ProductosTienda {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  flex-wrap: wrap;
+
+  .Tarjetas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 3rem;
+
+    .TarjetaImagen {
+      width: 400px;
+      padding: 1rem;
+      display: flex;
+      border-radius: 30px;
+      flex-direction: column;
+
+      .TarjetaTitulo {
+        padding-inline: 60px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 1rem;
+      }
+    }
+  }
+}

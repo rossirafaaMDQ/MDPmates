@@ -1,0 +1,8 @@
+.Grilla {
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas:
+    "Curar-Mate"
+    "Preparacion"
+    "Beneficios";
+}

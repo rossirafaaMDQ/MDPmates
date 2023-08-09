@@ -24,12 +24,12 @@
 .Menu_Item a .ClassLogo {
   width: 100%;
 }
-.Menu_Item a .Logo {
+.Menu_Item a .ClassLogo .Logo {
   margin: 0 auto;
   background-position: center;
   display: block;
 }
-.Menu_Item a .Menu {
+.Menu_Item a .ClassLogo .Logo .Menu {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -38,49 +38,6 @@
   height: 100%;
   justify-content: center;
   list-style-type: none;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
-  font-family: "Open Sans", sans-serif;
-}
-
-.navbar {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-.navbar .Logo {
-  margin: 0 auto;
-  background-position: center;
-  display: block;
-}
-.navbar .Logo .Menu {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-top: 20px;
-  margin-bottom: 30px;
-  height: 100%;
-  justify-content: center;
-  list-style-type: none;
-}
-.navbar .Logo .Menu .Menu_Item a {
-  align-items: center;
-  color: black;
-  text-decoration: underline;
-  list-style-type: none;
-}
-
-h1,
-h2,
-h3,
-p {
-  text-align: center;
 }
 
 .Main {
@@ -116,6 +73,40 @@ p {
   text-align: center;
 }
 
+.ProductosTienda {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+.ProductosTienda .Tarjetas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 3rem;
+}
+.ProductosTienda .Tarjetas .TarjetaImagen {
+  width: 400px;
+  padding: 1rem;
+  display: flex;
+  border-radius: 30px;
+  flex-direction: column;
+}
+.ProductosTienda .Tarjetas .TarjetaImagen .TarjetaTitulo {
+  padding-inline: 60px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 1rem;
+}
+
+.Grilla {
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas: "Curar-Mate" "Preparacion" "Beneficios";
+}
+
 footer {
   background-color: rgb(0, 0, 0);
 }
@@ -125,6 +116,99 @@ footer .Redes {
 }
 footer .Redes .Info {
   color: white;
+}
+
+.Pie-de-pagina,
+h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Open Sans", sans-serif;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  .Logo {
+    margin: 0 auto;
+    background-position: center;
+    display: block;
+
+    .Menu {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 20px;
+      margin-bottom: 30px;
+      height: 100%;
+      justify-content: center;
+      list-style-type: none;
+
+      .Menu_Item a {
+        align-items: center;
+        color: black;
+        text-decoration: underline;
+        list-style-type: none;
+      }
+    }
+  }
+}
+
+.Main {
+  background-color: white;
+
+  .Titulo-Index {
+    margin-bottom: 50px;
+
+    .FotoPrincipal {
+      background-image: url("../images/imperial\ foto\ aestetic.jpg");
+      height: 100vh;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      padding-inline: 200px;
+      display: flex;
+      flex-direction: column;
+
+      h2,
+      p {
+        padding-inline: 100px;
+        background-color: rgba(255, 255, 255, 0.356);
+        margin-top: 30px;
+
+        h1,
+        h2,
+        h3,
+        p {
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+footer {
+  background-color: rgb(0, 0, 0);
+
+  .Redes {
+    text-align: right;
+    color: white;
+
+    .Info {
+      color: white;
+    }
+  }
 }
 
 /* Pagina Tienda */
