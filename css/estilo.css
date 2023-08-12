@@ -21,15 +21,18 @@
   text-decoration: underline;
   list-style-type: none;
 }
-.Menu_Item a .ClassLogo {
+
+.Menu_Item a {
   width: 100%;
 }
-.Menu_Item a .ClassLogo .Logo {
+
+.Logo {
   margin: 0 auto;
   background-position: center;
   display: block;
 }
-.Menu_Item a .ClassLogo .Logo .Menu {
+
+.Menu {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -43,10 +46,18 @@
 .Main {
   background-color: white;
 }
-.Main .Titulo-Index {
+
+.h1,
+h2,
+h3,
+p {
+  text-align: center;
+}
+.Titulo-Index {
   margin-bottom: 50px;
 }
-.Main .Titulo-Index .FotoPrincipal {
+
+.FotoPrincipal {
   background-image: url("../images/imperial foto aestetic.jpg");
   height: 100vh;
   background-size: cover;
@@ -56,20 +67,11 @@
   display: flex;
   flex-direction: column;
 }
-.Main .Titulo-Index .FotoPrincipal h2,
-.Main .Titulo-Index .FotoPrincipal p {
+.FotoPrincipal h2,
+.FotoPrincipal p {
   padding-inline: 100px;
   background-color: rgba(255, 255, 255, 0.356);
   margin-top: 30px;
-}
-.Main .Titulo-Index .FotoPrincipal h2 h1,
-.Main .Titulo-Index .FotoPrincipal h2 h2,
-.Main .Titulo-Index .FotoPrincipal h2 h3,
-.Main .Titulo-Index .FotoPrincipal h2 p,
-.Main .Titulo-Index .FotoPrincipal p h1,
-.Main .Titulo-Index .FotoPrincipal p h2,
-.Main .Titulo-Index .FotoPrincipal p h3,
-.Main .Titulo-Index .FotoPrincipal p p {
   text-align: center;
 }
 
@@ -112,9 +114,6 @@ footer {
 }
 footer .Redes {
   text-align: right;
-  color: white;
-}
-footer .Redes .Info {
   color: white;
 }
 
@@ -270,4 +269,4 @@ h1 {
     grid-template-rows: repeat(3, 1fr);
     grid-template-areas: "Curar-Mate" "Preparacion" "Beneficios";
   }
-}/*# sourceMappingURL=estilo.css.map */
+} /*# sourceMappingURL=estilo.css.map */
