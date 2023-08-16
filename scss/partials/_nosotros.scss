@@ -1,0 +1,22 @@
+.ProductosTienda {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+
+.Tarjetas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 3rem;
+}
+
+.nosotros {
+  @extend .ProductosTienda;
+}
+
+.nosotros {
+  @extend .Tarjetas;
+}
