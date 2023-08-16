@@ -85,6 +85,11 @@ p {
   margin-top: 50px;
   flex-wrap: wrap;
 }
+
+.Tarjetas:hover {
+  transform: scale(1.1);
+}
+
 .ProductosTienda .Tarjetas {
   display: flex;
   align-items: center;
